@@ -1,0 +1,13 @@
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - refresh
+encrypt:
+  key-store:
+    location: classpath:jks/config-server.jks
+    password: test1234
+    secret: test1234
+    alias: config-server-key
+    type: jks
